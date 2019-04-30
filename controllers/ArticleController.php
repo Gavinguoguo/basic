@@ -1,6 +1,7 @@
 <?php
 namespace app\controllers;
 use app\models\Article;
+use yii\caching\DbDependency;
 use yii\web\Controller;
 
 /**
@@ -50,6 +51,11 @@ class ArticleController extends Controller
 //        $sql = $article->createCommand()->getRawSql();
 //        dd($rs);
 
+    }
 
+    public function actionUpdate(){
+        $data = Article::find()->one();
+
+        dd($data);
     }
 }
