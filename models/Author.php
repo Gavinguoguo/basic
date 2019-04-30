@@ -21,6 +21,7 @@ class Author extends \yii\db\ActiveRecord
 
     public function attributeLabels()
     {
+
         return [
             'auid'=> '作者id',
             'author' => '作者',
